@@ -167,6 +167,7 @@ function a:Window(f, f, f)
     i.Size = UDim2.new(0, 0, 0, 0)
     i:TweenSize(UDim2.new(0, 555, 0, 352), "Out", "Quad", 0.4, true)
     local f = Instance.new("UIGradient")
+    f.Name = "MCNR"
     f.Color = ColorSequence.new {
                 ColorSequenceKeypoint.new(0.00, _G.Dark),
                 ColorSequenceKeypoint.new(0.40, _G.Primary),
@@ -174,6 +175,7 @@ function a:Window(f, f, f)
                 ColorSequenceKeypoint.new(0.60, _G.Primary),
                 ColorSequenceKeypoint.new(1.00, _G.Dark)
             }
+    f.Parent = i
     local f = Instance.new("UIStroke")
     local f = Instance.new("UICorner")
     f.Name = "MCNR"
