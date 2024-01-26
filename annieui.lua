@@ -152,7 +152,7 @@ function a:Window(f, f, f)
     i.Parent = f
     i.ClipsDescendants = true
     i.AnchorPoint = Vector2.new(0.5, 0.5)
-    i.BackgroundColor3 = ColorSequence.new {
+    i.Color = ColorSequence.new {
                 ColorSequenceKeypoint.new(0.00, _G.Dark),
                 ColorSequenceKeypoint.new(0.40, _G.Primary),
                 ColorSequenceKeypoint.new(0.50, _G.Primary),
@@ -176,7 +176,7 @@ function a:Window(f, f, f)
     local f = Instance.new("Frame")
     f.Name = "Top"
     f.Parent = i
-    f.BackgroundColor3 = ColorSequence.new {
+    f.Color = ColorSequence.new {
                 ColorSequenceKeypoint.new(0.00, _G.Dark),
                 ColorSequenceKeypoint.new(0.40, _G.Primary),
                 ColorSequenceKeypoint.new(0.50, _G.Primary),
@@ -219,7 +219,7 @@ function a:Window(f, f, f)
     local e = Instance.new("Frame")
     e.Name = "Tab"
     e.Parent = i
-    e.BackgroundColor3 = ColorSequence.new {
+    e.Color = ColorSequence.new {
                 ColorSequenceKeypoint.new(0.00, _G.Dark),
                 ColorSequenceKeypoint.new(0.40, _G.Primary),
                 ColorSequenceKeypoint.new(0.50, _G.Primary),
@@ -234,7 +234,7 @@ function a:Window(f, f, f)
     j.Name = "ScrollTab"
     j.Parent = e
     j.Active = true
-    j.BackgroundColor3 = ColorSequence.new {
+    j.Color = ColorSequence.new {
                 ColorSequenceKeypoint.new(0.00, _G.Dark),
                 ColorSequenceKeypoint.new(0.40, _G.Primary),
                 ColorSequenceKeypoint.new(0.50, _G.Primary),
