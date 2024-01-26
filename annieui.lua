@@ -153,7 +153,7 @@ function a:Window(f, f, f)
     local f = f or Enum.KeyCode.RightControl
     local f = string.gsub(tostring(f), "Enum.KeyCode.", "")
     local f = Instance.new("ScreenGui")
-    f.Name = "ZekromHubXUI"
+    f.Name = "RobloxUI"
     f.Parent = game.CoreGui
     f.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     local i = Instance.new("Frame")
@@ -167,7 +167,7 @@ function a:Window(f, f, f)
     i.Size = UDim2.new(0, 0, 0, 0)
     i:TweenSize(UDim2.new(0, 555, 0, 352), "Out", "Quad", 0.4, true)
     local f = Instance.new("UIGradient")
-    f.Name = "MCNR"
+    f.Name = "UIGradient"
     f.Color = ColorSequence.new {
                 ColorSequenceKeypoint.new(0.00, _G.Dark),
                 ColorSequenceKeypoint.new(0.40, _G.Primary),
