@@ -113,7 +113,7 @@ e.BackgroundTransparency = .1
 e.Image = "rbxassetid://6336408581"
 e.Visible = false
  local z = Instance.new("UIGradient")
-    f.Color = ColorSequence.new {
+    z.Color = ColorSequence.new {
                 ColorSequenceKeypoint.new(0.00, _G.Dark),
                 ColorSequenceKeypoint.new(0.40, _G.Primary),
                 ColorSequenceKeypoint.new(0.50, _G.Primary),
