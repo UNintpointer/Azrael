@@ -157,6 +157,14 @@ function a:Window(f, f, f)
     i.Position = UDim2.new(0.5, 0, 0.5, 0)
     i.Size = UDim2.new(0, 0, 0, 0)
     i:TweenSize(UDim2.new(0, 555, 0, 352), "Out", "Quad", 0.4, true)
+    local g = Instance.new("UIGradient")
+    g.Color = ColorSequence.new {
+                ColorSequenceKeypoint.new(0.00, _G.Dark),
+                ColorSequenceKeypoint.new(0.40, _G.Primary),
+                ColorSequenceKeypoint.new(0.50, _G.Primary),
+                ColorSequenceKeypoint.new(0.60, _G.Primary),
+                ColorSequenceKeypoint.new(1.00, _G.Dark)
+            }
     local f = Instance.new("UIStroke")
     local f = Instance.new("UICorner")
     f.Name = "MCNR"
@@ -253,16 +261,6 @@ function a:Window(f, f, f)
     local k = Instance.new("Folder")
     k.Name = "PageList"
     k.Parent = l
-    local g = Instance.new("UIGradient")
-    g.Color =
-                ColorSequence.new {
-                ColorSequenceKeypoint.new(0.00, _G.Dark),
-                ColorSequenceKeypoint.new(0.40, _G.Primary),
-                ColorSequenceKeypoint.new(0.50, _G.Primary),
-                ColorSequenceKeypoint.new(0.60, _G.Primary),
-                ColorSequenceKeypoint.new(1.00, _G.Dark)
-            }
-    g.Parent = f
     local m = Instance.new("UIPageLayout")
     m.Parent = k
     m.SortOrder = Enum.SortOrder.LayoutOrder
