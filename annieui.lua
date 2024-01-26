@@ -152,7 +152,13 @@ function a:Window(f, f, f)
     i.Parent = f
     i.ClipsDescendants = true
     i.AnchorPoint = Vector2.new(0.5, 0.5)
-    i.BackgroundColor3 = Color3.fromRGB(20, 16, 16)
+    i.BackgroundColor3 = ColorSequence.new {
+                ColorSequenceKeypoint.new(0.00, _G.Dark),
+                ColorSequenceKeypoint.new(0.40, _G.Primary),
+                ColorSequenceKeypoint.new(0.50, _G.Primary),
+                ColorSequenceKeypoint.new(0.60, _G.Primary),
+                ColorSequenceKeypoint.new(1.00, _G.Dark)
+            }
     i.BackgroundTransparency = .1
     i.Position = UDim2.new(0.5, 0, 0.5, 0)
     i.Size = UDim2.new(0, 0, 0, 0)
@@ -170,7 +176,13 @@ function a:Window(f, f, f)
     local f = Instance.new("Frame")
     f.Name = "Top"
     f.Parent = i
-    f.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+    f.BackgroundColor3 = ColorSequence.new {
+                ColorSequenceKeypoint.new(0.00, _G.Dark),
+                ColorSequenceKeypoint.new(0.40, _G.Primary),
+                ColorSequenceKeypoint.new(0.50, _G.Primary),
+                ColorSequenceKeypoint.new(0.60, _G.Primary),
+                ColorSequenceKeypoint.new(1.00, _G.Dark)
+            }
     f.Size = UDim2.new(0, 556, 0, 30)
     f.BackgroundTransparency = 1
     local j = Instance.new("UICorner")
@@ -207,7 +219,13 @@ function a:Window(f, f, f)
     local e = Instance.new("Frame")
     e.Name = "Tab"
     e.Parent = i
-    e.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+    e.BackgroundColor3 = ColorSequence.new {
+                ColorSequenceKeypoint.new(0.00, _G.Dark),
+                ColorSequenceKeypoint.new(0.40, _G.Primary),
+                ColorSequenceKeypoint.new(0.50, _G.Primary),
+                ColorSequenceKeypoint.new(0.60, _G.Primary),
+                ColorSequenceKeypoint.new(1.00, _G.Dark)
+            }
     e.Position = UDim2.new(0, 14, 0, 33)
     e.BackgroundTransparency = 1
     e.Size = UDim2.new(0, 138, 0, 307)
@@ -216,7 +234,13 @@ function a:Window(f, f, f)
     j.Name = "ScrollTab"
     j.Parent = e
     j.Active = true
-    j.BackgroundColor3 = Color3.fromRGB(0, 10, 250)
+    j.BackgroundColor3 = ColorSequence.new {
+                ColorSequenceKeypoint.new(0.00, _G.Dark),
+                ColorSequenceKeypoint.new(0.40, _G.Primary),
+                ColorSequenceKeypoint.new(0.50, _G.Primary),
+                ColorSequenceKeypoint.new(0.60, _G.Primary),
+                ColorSequenceKeypoint.new(1.00, _G.Dark)
+            }
     j.Position = UDim2.new(0, 0, 0, 0)
     j.BackgroundTransparency = 1
     j.Size = UDim2.new(0, 138, 0, 307)
