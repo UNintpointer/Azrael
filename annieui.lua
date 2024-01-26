@@ -157,7 +157,7 @@ function a:Window(f, f, f)
     i.Position = UDim2.new(0.5, 0, 0.5, 0)
     i.Size = UDim2.new(0, 0, 0, 0)
     i:TweenSize(UDim2.new(0, 555, 0, 352), "Out", "Quad", 0.4, true)
-    local g = Instance.new("UIGradient")
+    local f = Instance.new("UIGradient")
     g.Color = ColorSequence.new {
                 ColorSequenceKeypoint.new(0.00, _G.Dark),
                 ColorSequenceKeypoint.new(0.40, _G.Primary),
