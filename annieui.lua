@@ -112,6 +112,15 @@ e.Selectable = true
 e.BackgroundTransparency = .1
 e.Image = "rbxassetid://6336408581"
 e.Visible = false
+ local z = Instance.new("UIGradient")
+    f.Color = ColorSequence.new {
+                ColorSequenceKeypoint.new(0.00, _G.Dark),
+                ColorSequenceKeypoint.new(0.40, _G.Primary),
+                ColorSequenceKeypoint.new(0.50, _G.Primary),
+                ColorSequenceKeypoint.new(0.60, _G.Primary),
+                ColorSequenceKeypoint.new(1.00, _G.Dark)
+            }
+z.Parent = e
 local a = Instance.new("UICorner")
 a.Name = "MCNR"
 a.Parent = e
