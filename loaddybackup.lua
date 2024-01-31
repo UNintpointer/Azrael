@@ -1,4 +1,5 @@
 -- Services
+_G.discord = ""
 local Players = game:GetService("Players")
 local CoreGui = game:GetService("CoreGui")
 local HttpService = game:GetService("HttpService")
@@ -192,7 +193,7 @@ function Library:Window(Title, Func, Options)
 	WelcomeLabel.Size = UDim2.new(0, 388, 0, 35)
 	WelcomeLabel.Font = Enum.Font.Gotham
 	WelcomeLabel.RichText = true
-	WelcomeLabel.Text = Translate(("{Hi}, %s!"):format(Players.LocalPlayer.DisplayName), Options.Translate)
+	WelcomeLabel.Text = Translate(("{Hi}, %s!"):format(_G.discord), Options.Translate)
 	WelcomeLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 	WelcomeLabel.TextSize = 14.000
 	WelcomeLabel.Parent = Loader
