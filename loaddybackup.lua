@@ -573,9 +573,10 @@ function Library:Window(Title, Func, Options)
     YLoad.MouseButton1Down:Connect(function()
 		if WindowData.Selection then
         	Func(WindowData.Selection, WindowData)
+		WindowData:Exit()
 		end
 
-        WindowData:Exit()
+        
     end)
 
     ZExit.MouseButton1Down:Connect(function()
