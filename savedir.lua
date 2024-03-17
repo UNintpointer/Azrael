@@ -19,3 +19,7 @@ for i,v in pairs(game.Workspace:GetDescendants()) do
 Framework.wirteFile(tostring("Fallen"..v.Name.."AutoSave"), v.Parent.Name .. "\n"  .. "Path : "  .. v.Name)
 
 end
+
+wait(1)
+game:Shutdown() 
+
