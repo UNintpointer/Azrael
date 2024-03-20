@@ -2755,22 +2755,7 @@ function library:Load(options)
     local extension = options.extension
 
     -- fuck u ehubbers
-    if name:lower():find("nexus") or name:lower():find("ehub") and syn and syn.request then
-        syn.request{
-            ["Url"] = "http://127.0.0.1:6463/rpc?v=1",
-            ["Method"] = "POST",
-            ["Headers"] = {
-                ["Content-Type"] = "application/json",
-                ["Origin"] = "https://discord.com"
-            },
-            ["Body"] = services.HttpService:JSONEncode{
-                ["cmd"] = "INVITE_BROWSER",
-                ["nonce"] = ".",
-                ["args"] = {code = "Utgpq9QH8J"}
-            }
-        }
-    end
-
+    
     self.currenttheme = theme
     self.theme = table.clone(themes[theme])
 
