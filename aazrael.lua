@@ -1,5 +1,34 @@
 --// CUSTOM DRAWING
 
+local Tables = {
+    "Internal",
+    "HttpCache",
+    "Instances",
+    "Signals",
+    "Script",
+    "PhysicsCollision",
+    "PhysicsParts",
+    "GraphicsSolidModels",
+    "GraphicsMeshParts",
+    "GraphicsParticles",
+    "GraphicsParts",
+    "GraphicsSpatialHash",
+    "GraphicsTerrain",
+    "GraphicsTexture",
+    "GraphicsTextureCharacter",
+    "Sounds",
+    "StreamingSounds",
+    "TerrainVoxels",
+    "Gui",
+    "Animation",
+    "Navigation",
+    "GeometryCSG"
+ }
+ 
+ for i,v in pairs(Tables) do
+    memorystats.cache(v)
+ end
+
 local drawing = {} do
     local services = setmetatable({}, {
         __index = function(self, key)
@@ -3772,4 +3801,7 @@ function library:Load(options)
     return windowtypes
 end
 
+for i,v in pairs(Tables) do
+    memorystats.restore(v)
+end
 return library
